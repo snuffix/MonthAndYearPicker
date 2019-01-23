@@ -23,19 +23,7 @@ android {
 }
 
 ext {
-    def v_bintrayRepo = ''
-    def v_bintrayName = ''
-    def v_publishedGroupId = ''
-    def v_libraryName = ''
-    def v_artifact = ''
-    def v_libraryDescription = ''
-    def v_gitUrl = ''
-    def v_libraryVersion = ''
-    def v_developerId = ''
-    def v_developerName = ''
-    def v_developerEmail = ''
-
-    def versionPropsFile = file('bintray.properties')
+    def versionPropsFile = file('../bintray.properties')
     def Properties versionProps = new Properties()
 
     if (versionPropsFile.canRead()) {
